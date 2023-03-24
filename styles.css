@@ -1,0 +1,49 @@
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.boxscore {
+    border: 2px solid #000;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.boxscore__team__units, .boxscore__team__results {
+    display: flex;
+}
+
+.boxscore__team__units span, .boxscore__team__results span {
+    width: 25px;
+    text-align: center;
+}
+
+.boxscore__team {
+    display: flex;
+}
+
+.boxscore__team label {
+    width: 50px;
+    border: 1px solid #000;
+}
+
+.boxscore__team.boxscore__team--away label {
+    background-color: blue;
+    color: #fff;
+}
+
+.boxscore__team.boxscore__team--home label {
+    background-color: red;
+    color: #fff;
+}
+
+.boxscore__team__results {
+    margin-left: 1rem;
+}
+
+.boxscore__team__units span, .boxscore__team__results span {
+    border: 1px solid #000;
+}
+
+.boxscore__team__units span:nth-of-type(odd), .boxscore__team__results span:nth-of-type(odd) {
+    background-color: #ededed;
+}
