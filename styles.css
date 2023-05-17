@@ -19,6 +19,7 @@ html {
 
 .boxscore__team {
     display: flex;
+    justify-content: center;
 }
 
 .boxscore__team label {
@@ -46,4 +47,9 @@ html {
 
 .boxscore__team__units span:nth-of-type(odd), .boxscore__team__results span:nth-of-type(odd) {
     background-color: #ededed;
+}
+.boxscore__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
