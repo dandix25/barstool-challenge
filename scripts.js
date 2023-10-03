@@ -1,3 +1,2 @@
-fetch('scripts.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+import data from 'scripts.json';
+console.log(data);
