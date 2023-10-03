@@ -26,7 +26,7 @@ html {
 }
 
 .boxscore.nfl .boxscore__team--home label, .boxscore.nfl .boxscore__details__team--home {
-    background-color: var(--home-away-color);
+    background-color: var(--nfl-home-color);
 }
 
 .boxscore__team__units, .boxscore__team__results {
@@ -50,7 +50,6 @@ html {
 
 .boxscore__team.boxscore__team--away label {
     color: #fff;
-    background-color:
 }
 
 .boxscore__team.boxscore__team--home label {
