@@ -1,7 +1,12 @@
+:root {
+    --mlb-away-color: #002F6C;
+    --mlb-home-color: #CC0000;
+    --nfl-away-color: #203731;
+    --nfl-home-color: #002244;
+}
 html {
     font-family:Arial, Helvetica, sans-serif;
 }
-
 .boxscore {
     border: 2px solid #000;
     margin: 2rem 0;
