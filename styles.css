@@ -63,18 +63,25 @@ html {
 .boxscore__team__units span, .boxscore__team__results span {
     border: 1px solid #000;
 }
-
+.boxscore__team label, .boxscore__team__units span, .boxscore__team__results span {
+    width: 50px;
+}
 .boxscore__team__units span:nth-of-type(odd), .boxscore__team__results span:nth-of-type(odd) {
     background-color: #ededed;
 }
 .boxscore__details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 .boxscore__details__team {
     color: #fff;
 }
 .boxscore__details__team, .boxscore__details__info {
     text-align: center;
+    padding: 10px 0;
 }
-
+.boxscore__details__team p {
+    display: grid;
+    margin-top: 0;
+}
