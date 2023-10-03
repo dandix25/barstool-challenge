@@ -21,8 +21,14 @@ var i;
 for(i=0;i<data.away_period_scores.length;i++){
   document.getElementById('away-' + [i+1]).innerText = data.away_period_scores[i];
 }
-document.getElementById('away-abv').style.background = generateGradient(colors[data.away_team.abbreviation]);
-document.querySelector('.boxscore__details__team--away').style.background = generateGradient(colors[data.away_team.abbreviation]);
+if(data.away_team.abbreviation == 'LAA'){
+  document.getElementById('away-abv').style.background = generateGradient(colors.ANA);
+  document.querySelector('.boxscore__details__team--away').style.background = generateGradient(colors.ANA);
+} else {
+  document.getElementById('away-abv').style.background = generateGradient(colors[data.away_team.abbreviation]);
+  document.querySelector('.boxscore__details__team--away').style.background = generateGradient(colors[data.away_team.abbreviation]);
+}
+
 document.getElementById('away-r').innerText = data.away_batter_totals.runs;
 document.getElementById('away-h').innerText = data.away_batter_totals.hits;
 document.getElementById('away-e').innerText = data.away_errors;
@@ -35,8 +41,15 @@ var i;
 for(i=0;i<data.home_period_scores.length;i++){
   document.getElementById('home-' + [i+1]).innerText = data.home_period_scores[i];
 }
-document.getElementById('home-abv').style.background = generateGradient(colors[data.home_team.abbreviation]);
-document.querySelector('.boxscore__details__team--home').style.background = generateGradient(colors[data.home_team.abbreviation]);
+
+if(data.home_team.abbreviation == 'LAA'){
+  document.getElementById('home-abv').style.background = generateGradient(colors.ANA);
+  document.querySelector('.boxscore__details__team--home').style.background = generateGradient(colors.ANA);
+} else {
+  document.getElementById('home-abv').style.background = generateGradient(colors[data.home_team.abbreviation]);
+  document.querySelector('.boxscore__details__team--home').style.background = generateGradient(colors[data.home_team.abbreviation]);
+}
+
 document.getElementById('home-r').innerText = data.home_batter_totals.runs;
 document.getElementById('home-h').innerText = data.home_batter_totals.hits;
 document.getElementById('home-e').innerText = data.home_errors;
