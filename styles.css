@@ -31,19 +31,17 @@ html {
 
 .boxscore__team__units, .boxscore__team__results {
     display: flex;
-}
-
-.boxscore__team__units span, .boxscore__team__results span {
-    text-align: center;
+    justify-content: space-between;
 }
 
 .boxscore__team {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: 1fr 6fr 1fr;
 }
 
 .boxscore__team label {
     border: 1px solid #000;
+    width: 100px;
 }
 
 .boxscore__team.boxscore__team--away label {
@@ -59,10 +57,12 @@ html {
 }
 
 .boxscore__team__units span, .boxscore__team__results span {
+    text-align: center;
     border: 1px solid #000;
+    width: 100%;
 }
 .boxscore__team label, .boxscore__team__units span, .boxscore__team__results span {
-    width: 50px;
+    padding: 5px;
 }
 .boxscore__team__units span:nth-of-type(odd), .boxscore__team__results span:nth-of-type(odd) {
     background-color: #ededed;
