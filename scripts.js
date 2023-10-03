@@ -1,2 +1,2 @@
-import data from 'scripts.json';
+import data from './scripts.json';
 console.log(data);
