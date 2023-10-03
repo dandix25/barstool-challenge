@@ -49,12 +49,10 @@ html {
 }
 
 .boxscore__team.boxscore__team--away label {
-    background-color: blue;
     color: #fff;
 }
 
 .boxscore__team.boxscore__team--home label {
-    background-color: red;
     color: #fff;
 }
 
