@@ -34,7 +34,6 @@ html {
 }
 
 .boxscore__team__units span, .boxscore__team__results span {
-    width: 25px;
     text-align: center;
 }
 
@@ -44,7 +43,6 @@ html {
 }
 
 .boxscore__team label {
-    width: 50px;
     border: 1px solid #000;
 }
 
