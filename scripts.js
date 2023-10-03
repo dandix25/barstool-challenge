@@ -5,6 +5,7 @@ console.log(data);
 document.getElementById('away-abv').innerText = data.away_team.abbreviation;
 document.getElementById('away-abv2').innerText = data.away_team.abbreviation;
 document.getElementById('away-masc').innerText = data.away_team.last_name;
+var i;
 for(i=0;i<data.away_period_scores.length;i++){
   document.getElementById('away-' + [i]).innerText = data.away_period_scores[i];
 }
