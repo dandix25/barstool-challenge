@@ -13,19 +13,19 @@ html {
     padding: 2rem;
 }
 
-.boxscore.mlb .boxscore__team--away, .boxscore.mlb .boxscore__details__team--away {
+.boxscore.mlb .boxscore__team--away label, .boxscore.mlb .boxscore__details__team--away {
     background-color: var(--mlb-away-color);
 }
 
-.boxscore.mlb .boxscore__team--home, .boxscore.mlb .boxscore__details__team--home {
+.boxscore.mlb .boxscore__team--home label, .boxscore.mlb .boxscore__details__team--home {
     background-color: var(--mlb-home-color);
 }
 
-.boxscore.nfl .boxscore__team--away, .boxscore.nfl .boxscore__details__team--away {
+.boxscore.nfl .boxscore__team--away label, .boxscore.nfl .boxscore__details__team--away {
     background-color: var(--nfl-away-color);
 }
 
-.boxscore.nfl .boxscore__team--home, .boxscore.nfl .boxscore__details__team--home {
+.boxscore.nfl .boxscore__team--home label, .boxscore.nfl .boxscore__details__team--home {
     background-color: var(--home-away-color);
 }
 
@@ -50,6 +50,7 @@ html {
 
 .boxscore__team.boxscore__team--away label {
     color: #fff;
+    background-color:
 }
 
 .boxscore__team.boxscore__team--home label {
