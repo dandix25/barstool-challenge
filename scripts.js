@@ -9,4 +9,3 @@ var i;
 for(i=0;i<data.away_period_scores.length;i++){
   document.getElementById('away-' + [i+1]).innerText = data.away_period_scores[i];
 }
-document.getElementById('away-1').innerText = data.away_period_scores[0];
