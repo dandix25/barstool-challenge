@@ -13,6 +13,22 @@ html {
     padding: 2rem;
 }
 
+.boxscore.mlb .boxscore__team--away, .boxscore.mlb .boxscore__details__team--away {
+    background-color: var(--mlb-away-color);
+}
+
+.boxscore.mlb .boxscore__team--home, .boxscore.mlb .boxscore__details__team--home {
+    background-color: var(--mlb-home-color);
+}
+
+.boxscore.nfl .boxscore__team--away, .boxscore.nfl .boxscore__details__team--away {
+    background-color: var(--nfl-away-color);
+}
+
+.boxscore.nfl .boxscore__team--home, .boxscore.nfl .boxscore__details__team--home {
+    background-color: var(--home-away-color);
+}
+
 .boxscore__team__units, .boxscore__team__results {
     display: flex;
 }
