@@ -1,3 +1,3 @@
-fetch('./scripts.json')
+fetch('scripts.json')
     .then((response) => response.json())
     .then((json) => console.log(json));
